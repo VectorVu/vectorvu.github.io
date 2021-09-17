@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+}
+/* ======================================================================== */
+/* ======================HEADER============================================ */
+.logo{
+    width: 400px;
+    float: left;
+}
+header{
+    background-image:linear-gradient(45deg, rgba(71,35,96,0.4) 80%, rgba(112,93,151,0.5)), url(../img/backgroun.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    /* vh- view height */
+    background-attachment: fixed;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    /* margin-right: 100px;
+    margin-top: 70px; */
+}
+.clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+.main-nav li a{
+    text-align: center;
+    text-decoration: none;
+    color: #a4add3;
+    font-size: 110%;
+    font-weight: 700;
+    transition: font-size 0.5s;
+}
+.main-nav li a:hover,.main-nav li a:active {
+    font-size: 130% ;
+}
+.heading-main-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%,-50%);
+    width: 1140px;
+}
+h1{
+    background: linear-gradient(to right, #d391fa, #190087);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 300%;
+    font-weight: 400;
+    letter-spacing: 3px;
+    /* color: #a4add3; */
+    line-height: 150%;
+    margin-bottom: 40px;
+    /* color: pink; */
+}
+.btn{
+    text-decoration: none;
+   
+    color: #a4add3;
+    padding: 15px 30px;
+    border-radius: 25px;
+    margin: 0 15px;
+}
